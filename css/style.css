@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2? família= Lato:ital@1 &family= Roboto & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #4309E8;
+    height: 80px;
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Roboto', sem serifa;
+    font-size: 20px;
+}
+.menu{
+    width: 600px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.banner{
+    height: 600px;
+    background-image: url(../img/banner.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texto-banner{
+    color:rgb(225, 0, 147) ;
+  
+}
+.posicao-texto{
+    justify-content: flex-end;
+}
+.texto-banner h1{
+    font-family:  'Lato', sem serifa;
+    font-size: 100px;
+    font-weight: bold;
+}
+.texto-banner {
+    width: 1200px;
+    color:rgb(225, 0, 147); 
+    text-align: center;
+    font-family:'Roboto', sem serifa;
+    font-size: 25px; 
+}
+.texto-banner a{
+    background-color: red;
+    color:rgb(225, 0, 147) ;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 3px;
+}
+.texto-banner p{
+    margin-bottom: 30px;
+}
+.secao-jogos{
+    background-color: #4309E8;
+}
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jogos img{
+    width: 80px;
+
+}
+.secao-sobre{
+    background-image: url(../img/fundo1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.texto-sobre{
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.barras{
+    width: 30px;
+    display: none;
+}
+.posicionamento-header{
+    position: relative;
+
+} 
+
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width:90%;
+    }
+    .menu a{
+        font-size: 10px;
+    }
+
+    
+    .logo{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    h1{
+        color:darkcyan
+    }
+    .barras{
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 250px;
+        height: 250px;
+        position:absolute;
+        top:0;
+        right: 60;
+        background-color: black;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
+}

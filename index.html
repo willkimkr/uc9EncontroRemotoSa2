@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ALLGAMES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-grid posicionamento-header">
+            <a href=""><img class="logo" src="img/logo.svg" alt="Logo do Site"></a>
+            <nav id="menu" class="menu">
+                <a href="">Inicio</a>
+                <a href="">Meu carrinho</a>
+                <a href="">Entrar ou Cadastrar</a>
+                <a href="">Sac</a>
+            </nav>
+            <a href="" onclick="mostrarMenu()"><img class="barras" src="img/bars.svg" alt="Menu de barras"</a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container-grid posicao-texto">
+        <div class="texto-banner">
+            <h1>AllGames</h1>
+            <p>A maior loja de games online </p>
+            <a href="">Promocoes</a>
+        </div>
+    </div>
+    <section class="secao-jogos">
+        <div class="jogos container">
+            <a href=""><img src="img/playstation.svg"></a>
+            <a href=""><img src="img/xbox.svg"></a>
+            <a href=""><img src="img/pcgamelogo.svg"></a>
+            <a href=""><img src="img/nintendo.svg"></a>
+        </div>
+    </section>
+    <section class="secao-sobre">
+        <div class="conteudo-sobre container">
+            <div class="row">
+            <div class="texto-sobre col-md-4">
+                <h2>Acessorios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error necessitatibus qui nulla, et perspiciatis minima laboriosam exercitationem itaque quasi accusamus voluptate eaque odit aliquam in animi assumenda deleniti sequi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minus quia excepturi cumque quisquam sapiente, unde numquam eius esse velit, nulla adipisci eligendi rerum ratione molestias, suscipit nisi reiciendis? Esse!</p>
+            </div>
+            <div class="container-imagem col-md-4">
+                <img src="img/acessorios.jpg" alt="acessorios"
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        let menu = document.getElementById("menu");
+
+        function mostrarMenu(){
+            if(menu.style.display != "flex"){
+                menu.style.display = "flex"
+            }else{
+                menu.style.display = "none"
+            }
+
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
