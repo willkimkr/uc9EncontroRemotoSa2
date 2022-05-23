@@ -67,6 +67,12 @@ header{
 .texto-banner p{
     margin-bottom: 30px;
 }
+#carrosel img{
+    display: none;
+}
+.banner-ativo{
+    display: flex;
+}
 .secao-jogos{
     background-color: #4309E8;
 }
@@ -264,11 +270,17 @@ button{
         height: 250px;
         position:absolute;
         top:0;
-        right: 60;
+        right: 60px;
         background-color: black;
     }
     .menu a{
         text-align: center;
         padding: 15px;
+    }
+    .posicionamento-header{
+        position: relative;
+    }
+    .menu-ativo{
+        display: flex;
     }
 }
