@@ -38,7 +38,7 @@ header{
     background-size: cover;
 }
 .texto-banner{
-    color:rgb(225, 0, 147) ;
+    color:rgb(33, 70, 61) ;
   
 }
 .posicao-texto{
@@ -51,14 +51,14 @@ header{
 }
 .texto-banner {
     width: 1200px;
-    color:rgb(225, 0, 147); 
+    color:rgb(49, 81, 48); 
     text-align: center;
     font-family:'Roboto', sem serifa;
     font-size: 25px; 
 }
 .texto-banner a{
     background-color: red;
-    color:rgb(225, 0, 147) ;
+    color:rgb(49, 81, 48) ;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
@@ -86,7 +86,7 @@ header{
 
 }
 .secao-sobre{
-    background-image: url(../img/fundo1.svg);
+    background-image: url(../img/fundocinza.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,7 +107,7 @@ header{
 }
 
 footer{
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(17, 17, 17);
 }    
 .rodape{
     display:flex;
@@ -115,13 +115,13 @@ footer{
     padding: 16px;
 }
 .links{
-    color: purple;
+    color: rgb(61, 2, 200);
 }
 .links h2{
     font-size: 24px;
 }
 .links a{
-    color:purple;
+    color:rgb(61, 2, 200);
     text-decoration: none;
     font-size: 14px;
 }
@@ -134,7 +134,7 @@ footer{
     width: 200px;
 }
 .sociais h2{
-    color:purple;
+    color:rgb(61, 2, 200);
     font-size: 14px;
     margin-bottom: 8px;
 }
@@ -164,7 +164,7 @@ button{
     margin-top: 3px;
 }
 .secao-noticias{
-    background-color: rgb(255, 119, 0);
+    background-color: rgb(94, 94, 94);
     padding: 30px;
 }
 .secao-noticias .container{
@@ -192,7 +192,7 @@ button{
     height: 500px;
     margin-bottom: 30px;
     background: var( --gradient);
-    box-shadow: 0px 0px 40px yellow, 0px 0px 60px yellow ;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255), 0px 0px 60px rgb(255, 255, 255) ;
 }
 .cardnews h3{
     font-size: 24px;
@@ -218,7 +218,7 @@ button{
     height: auto;
     padding: 16px;
     background: var(--gradient);
-    box-shadow: 0px 0px 10px yellow, 0px 0px 30px yellow ;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 30px rgb(255, 255, 255) ;
 }
 .next-games-match{
     width: 100%;
