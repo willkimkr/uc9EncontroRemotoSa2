@@ -1,16 +1,9 @@
-$(document).ready(function(){
+$( document ).ready(function() {
 
-    $("#barras").click(function(){
-        $("#menu").toggleClass("#menu-ativo")
-})          
-})
-
-$(document).ready(function(){
     $("#carrosel img:eq(0)").addClass("banner-ativo").show()
-})
+        $("#menu").toggleClass("#menu-ativo")
 
-
-setInterval(slide,3000)
+    setInterval(slide,3000)
 
 function slide(){
     if($(".banner-ativo").next().length){
@@ -20,9 +13,9 @@ function slide(){
         $("#carrosel img:eq(0)").addClass("banner-ativo").show()
     } 
 }
-
-
-//     $("#barras").click(function(){
+//$("#barras").click(function ( ){
+   // $("#menu").toggleClass("menu_ativo")
+})
 //         if($("#menu").hasClass("#menu-nativo")){
 //             $("#menu").removeClass("#menu-ativo")
 //         }else{
@@ -35,12 +28,12 @@ function slide(){
 //     window.alert("Hello World")
 // }
 let email = document.getElementById("campo-email");
+// let menu = document.getElementById("menu");
 
-
-function enviarEmail(){
-    let emailDigitado = email.value;
-    console.log(emailDigitado)
-}
+//function enviarEmail(){
+   // let emailDigitado = email.value;
+    //console.log(emailDigitado)
+//}
 
 let listaNoticias = [
     {
@@ -77,7 +70,7 @@ function renderizarNoticias() {
     for (let index = 0; index < listaNoticias.length; index++) {
         const noticias = listaNoticias[index];
         
-        template +=`<div class="cardnews">
+        template += ` <div class="cardnews">
         <img src="img/cards.svg" alt="foto gameover de noticias">
         <h3>${noticias.titulo}</h3>
         <p>${noticias.descricao}</p>
@@ -85,4 +78,5 @@ function renderizarNoticias() {
     }
 
     espaco.innerHTML = template;
+
 }
